@@ -9,3 +9,14 @@ C:\Users\Charel\Documents\C#\minimalClient\obj\Debug\netcoreapp2.2\minimalClient
 C:\Users\Charel\Documents\C#\minimalClient\obj\Debug\netcoreapp2.2\minimalClient.AssemblyInfo.cs
 C:\Users\Charel\Documents\C#\minimalClient\obj\Debug\netcoreapp2.2\minimalClient.dll
 C:\Users\Charel\Documents\C#\minimalClient\obj\Debug\netcoreapp2.2\minimalClient.pdb
+C:\Users\Charel\Documents\minimalClient\bin\Debug\netcoreapp2.2\minimalClient.deps.json
+C:\Users\Charel\Documents\minimalClient\bin\Debug\netcoreapp2.2\minimalClient.runtimeconfig.json
+C:\Users\Charel\Documents\minimalClient\bin\Debug\netcoreapp2.2\minimalClient.runtimeconfig.dev.json
+C:\Users\Charel\Documents\minimalClient\bin\Debug\netcoreapp2.2\minimalClient.dll
+C:\Users\Charel\Documents\minimalClient\bin\Debug\netcoreapp2.2\minimalClient.pdb
+C:\Users\Charel\Documents\minimalClient\obj\Debug\netcoreapp2.2\minimalClient.csprojAssemblyReference.cache
+C:\Users\Charel\Documents\minimalClient\obj\Debug\netcoreapp2.2\minimalClient.csproj.CoreCompileInputs.cache
+C:\Users\Charel\Documents\minimalClient\obj\Debug\netcoreapp2.2\minimalClient.AssemblyInfoInputs.cache
+C:\Users\Charel\Documents\minimalClient\obj\Debug\netcoreapp2.2\minimalClient.AssemblyInfo.cs
+C:\Users\Charel\Documents\minimalClient\obj\Debug\netcoreapp2.2\minimalClient.dll
+C:\Users\Charel\Documents\minimalClient\obj\Debug\netcoreapp2.2\minimalClient.pdb

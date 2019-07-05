@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Charel\\Documents\\C#\\minimalClient\\minimalClient.csproj": {}
+    "C:\\Users\\Charel\\Documents\\minimalClient\\minimalClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Charel\\Documents\\C#\\minimalClient\\minimalClient.csproj": {
+    "C:\\Users\\Charel\\Documents\\minimalClient\\minimalClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Charel\\Documents\\C#\\minimalClient\\minimalClient.csproj",
+        "projectUniqueName": "C:\\Users\\Charel\\Documents\\minimalClient\\minimalClient.csproj",
         "projectName": "minimalClient",
-        "projectPath": "C:\\Users\\Charel\\Documents\\C#\\minimalClient\\minimalClient.csproj",
+        "projectPath": "C:\\Users\\Charel\\Documents\\minimalClient\\minimalClient.csproj",
         "packagesPath": "C:\\Users\\Charel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Charel\\Documents\\C#\\minimalClient\\obj\\",
+        "outputPath": "C:\\Users\\Charel\\Documents\\minimalClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

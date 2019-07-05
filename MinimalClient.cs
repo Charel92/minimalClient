@@ -84,15 +84,14 @@ namespace minimalClient
                 
 
                 //string msg = MessageGenerator.generateRandomChatMessage();
-                sendMessage("{ \"type\" : \"chat\", \"receiver\" : \"" + name + "\", \"content\" : \"Hello cube\" }"+"\n");
+                sendMessage("{ \"type\" : \"chat\", \"receiver\" : \"" + "me" + "\", \"content\" : \"Hello cube\" }"+"\n");
                 //Console.WriteLine(msg);
                 for(int i=0;i<30;i++)
                 {
-                    sendMessage("{ \"type\" : \"chat\", \"receiver\" : \"" + name + "\", \"content\" : \""+System.DateTime.Now.Ticks+"\" }"+"\n");
+                    sendMessage("{ \"type\" : \"chat\", \"receiver\" : \"" + "me" + "\", \"content\" : \""+System.DateTime.Now.Ticks+"\" }"+"\n");
                 }
                 Thread.Sleep(3000);
-                stream.Close();
-                client.Close();
+                
                 
                  Close();
             }
@@ -113,7 +112,8 @@ namespace minimalClient
         void Close()
         {
             //NetworkStream stream=client.GetStream();
-            
+            stream.Close();
+                client.Close();
             
         }
 
