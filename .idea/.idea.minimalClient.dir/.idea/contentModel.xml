@@ -4,9 +4,9 @@
     <e p="C:\Users\Charel\.Rider2019.1\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Charel\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_.19.00" t="ExcludeRecursive" />
     <e p="C:\Users\Charel\Documents\C#\minimalClient" t="IncludeRecursive">
+      <e p=".gitattributes" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Listener.cs" t="Include" />
-      <e p="MessageGenerator" t="Include" />
       <e p="MessageGenerator.cs" t="Include" />
       <e p="MinimalClient.cs" t="Include" />
       <e p="minimalClient.csproj" t="IncludeRecursive" />

@@ -10,7 +10,7 @@ namespace minimalClient
         Int32 port = 4321;
         private TcpClient client;
         private NetworkStream stream;
-
+        string receiver = "Superjhemp";
         String name;
 
         public MinimalClient(String name)
@@ -62,8 +62,10 @@ namespace minimalClient
             // Close everything.
         }
 
-        public void sendMessage(String message)
+        public void sendMessage(object o)
         {
+            string message=(string)o;
+                
             byte[] data = Encoding.UTF8.GetBytes(message);
             stream = client.GetStream();
             stream.Write(data, 0, data.Length);
@@ -71,7 +73,7 @@ namespace minimalClient
             Console.WriteLine("Sent: {0}", message);
         }
 
-        public void Work(String server)
+        public void Work()
         {
             try
             {
@@ -81,19 +83,36 @@ namespace minimalClient
                 clientReceiveThread.IsBackground = true;
                 clientReceiveThread.Start();*/
                 Connect();
-                
 
+                
                 //string msg = MessageGenerator.generateRandomChatMessage();
-                sendMessage("{ \"type\" : \"chat\", \"receiver\" : \"" + "me" + "\", \"content\" : \"Hello cube\" }"+"\n");
+                sendMessage("{ \"type\" : \"chat\", \"receiver\" : \"" + receiver + "\", \"content\" : \"Hello cube\" }"+"\n");
                 //Console.WriteLine(msg);
+                
+                Thread cubesThread =new Thread(sendMultipleCubeMessages);
+                cubesThread.Start();
+                
+                
+                MessageGenerator generator=new MessageGenerator();
+                
+                
+                
+                
+                
+                
+                Thread newThread = new Thread(sendMessage);
+                Console.WriteLine("Start newThread...\n");
+                newThread.Start(generator.generateRandomChatMessage(receiver));
+                
                 for(int i=0;i<30;i++)
                 {
-                    sendMessage("{ \"type\" : \"chat\", \"receiver\" : \"" + "me" + "\", \"content\" : \""+System.DateTime.Now.Ticks+"\" }"+"\n");
+                    sendMessage("{ \"type\" : \"chat\", \"receiver\" : \"" + receiver + "\", \"content\" : \""+System.DateTime.Now.Ticks+"\" }"+"\n");
                 }
+                
                 Thread.Sleep(3000);
                 
                 
-                 Close();
+                 //Close();
             }
             catch (ArgumentNullException e)
             {
@@ -106,6 +125,7 @@ namespace minimalClient
 
             Console.WriteLine("\n Press Enter to continue...");
             Console.Read();
+            Close();
 
         }
 
@@ -117,10 +137,38 @@ namespace minimalClient
             
         }
 
-        void sendMessageToAll()
+        void sendMultipleChatMessages()
         {
-
+            
         }
+        void sendMultipleCubeMessages()
+        {
+            
+            MessageGenerator generator=new MessageGenerator();
+            for (int i = 0; i < 5000; i++)
+            {
+                int rndm=generator.RandomNumber(0, 3);
+                if (rndm==1)
+                {
+                    string msg = generator.generateRandomRemoveCubes("MiniClient1");
+                    if (msg!= null)
+                    {
+                        sendMessage(msg);
+                    }
+                    
+                }
+                else
+                {
+                    sendMessage(generator.generateRandomAddCubes("MiniClient1",50));
+                }
+            }
+            //Console.Write(name+" finished");
+        }
+        
+        
+        
+        
+        
 
         void listener()
         {

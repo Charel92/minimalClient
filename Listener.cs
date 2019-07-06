@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Net.Sockets;
 
 
@@ -8,6 +9,7 @@ namespace minimalClient
     public class Listener
     {
         NetworkStream stream;
+        
         
         public void listen()
         {
